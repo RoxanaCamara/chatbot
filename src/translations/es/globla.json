@@ -1,0 +1,13 @@
+{
+    "init-conversation":{
+        "init": "ey Holaa, un gusto conocerte",
+        "select-language": "Hola, antes de comenzar, seleccione su lenguaje de preferencia",
+        "i-am": "Mi nombre es y soy un chatboot" 
+    },
+    "user": {
+        "hello": "hola",
+        "languge": "idioma",
+        "you": "tu",
+        "dog": "perro"
+    }
+}

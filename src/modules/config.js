@@ -1,30 +1,38 @@
+// in config.js
 import { createChatBotMessage } from 'react-chatbot-kit';
-import LearningOptions from '../components/LearningOptions';
-import { optionsAboutHer, optionsLanguage } from '../Data/Data';
+import { Buttons } from '../components/Buttons/Buttons';
+import DogPicture from '../components/Dog/DogPicture';
 
-const config = { 
-  botName: "Narbot",
-  initialMessages: [
-    createChatBotMessage("Hello, before start select language "),
-    createChatBotMessage("Hola, antes de empezar seleccione el idioma",{widget: "language"})],  
+const botName = 'Narbot';
+
+const config = {
+  initialMessages: [createChatBotMessage(`Hi! I'm ${botName}`)],
+  botName: botName,
   customStyles: {
     botMessageBox: {
-      backgroundColor: "#376B7E",
+      backgroundColor: '#376B7E',
     },
     chatButton: {
-      backgroundColor: "#376B7E",
+      backgroundColor: '#5ccc9d',
     },
   },
+  /*customComponents: {
+   header: () => <div style={{ backgroundColor: 'red', padding: "5px", borderRadius: "3px" }}>This is the header</div>,
+   botAvatar: (props) => <MyAvatar {...props} />,
+   botChatMessage: (props) => <MyCustomChatMessage {...props} />,
+   userAvatar: (props) => <MyCustomAvatar {...props} />,
+   userChatMessage: (props) => <MyCustomUserChatMessage {...props} />
+ },*/
   widgets: [
     {
-      widgetName: "language",
-      widgetFunc: (props) => <LearningOptions options={optionsLanguage} {...props} />,
+      widgetName: 'dogPicture',
+      widgetFunc: (props) => <DogPicture {...props} />,
     },
     {
-      widgetName: "aboutHer",
-     widgetFunc: (props) => <LearningOptions options={optionsAboutHer} {...props} />,
-    },
+      widgetName: 'buttonsLanguage',
+      widgetFunc: (props) => <Buttons {...props} />,
+    }
   ],
-}
+};
 
-export default config
+export default config;

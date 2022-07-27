@@ -1,16 +1,35 @@
+// in MessageParser.js
+import React from 'react';
+import { useTranslation } from 'react-i18next';
 
-class MessageParser {
-    constructor(actionProvider) {
-      this.actionProvider = actionProvider;
-    }
+const MessageParser = ({ children, actions }) => {
+  const [ t, i18n] = useTranslation("global")
   
-    parse(message) {
-      const lowerCaseMessage = message.toLowerCase()
-            
-      if (lowerCaseMessage.includes("hello")) {
-        this.actionProvider.greet()
-      }
+  const parse = (message) => {
+    if (message.includes(t('user.hello'))) {
+      actions.handleHello();
     }
-  }
-  
-  export default MessageParser
+    if (message.includes(t('user.dog'))) {
+      actions.handleDog();
+    }
+    if (message.includes(t('user.languge'))) {
+      actions.handleLanguage();
+    }
+    if (message.includes(t('user.you'))) {
+      actions.handleLanguage();
+    }
+  };
+
+  return (
+    <div>
+      {React.Children.map(children, (child) => {
+        return React.cloneElement(child, {
+          parse: parse,
+          actions,
+        });
+      })}
+    </div>
+  );
+};
+
+export default MessageParser;
