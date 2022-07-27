@@ -1,15 +1,18 @@
 {
     "chatboot":{
-        "init": "Hola, un gusto conocerte",
-        "select-language": "antes de comenzar, seleccione su lenguaje de preferencia",
         "i-am": "Mi nombre es Narboot y soy un chatboot ",
-        "dog": "un perro random",
+        "dog": "un perro random",        
+        "about-her-presentation": "Ella vive en Argentina, Berazategui",
+        "about-her-job": "Es programadora front end",
+        "about-her-objectives": "Ella quiere invertir ajajaj",
+        "not-understand": "Perdon, no te entendi ni un socotroco",
         "goodbye": "Espero nos volvamos a hablar!"
     },
     "user": {
         "hello": "hola",
         "languge": "idioma",
         "you": "tu",
-        "dog": "perro"
+        "dog": "perro",
+        "about-her": "ella"
     }
 }

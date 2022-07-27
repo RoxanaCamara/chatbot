@@ -9,10 +9,17 @@ const MessageParser = ({ children, actions }) => {
 
     if (message.includes(t('user.dog'))) {
       actions.handleDog();
+      return;
     }
     if (message.includes(t('user.you'))) {
       actions.handleYou();
+      return;
     }
+    if (message.includes(t('user.about-her'))) {
+      actions.handleYou();
+      return;
+    }
+      actions.handleNotUnderstand()
   };
 
   return (

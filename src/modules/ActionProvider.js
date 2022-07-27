@@ -12,9 +12,24 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
       messages: [...prev.messages, botMessage],
     }));
   };
+
+  const handleMuchMsg = (texts = []) => {
+    texts.forEach(text => {
+      const botMessage = createChatBotMessage(text);
+      setState((prev) => ({
+        ...prev,
+        messages: [...prev.messages, botMessage],
+      }));
+    });
+   
+  };
   const handleDog = () => { handle( t("chatboot.dog"), {widget: 'dogPicture',})};
 
   const handleYou = () => { handle( t("chatboot.i-am"))};
+
+  const handleNotUnderstand = () => { handle( t("chatboot.not-understand"))};
+
+  const handleAboutHer = () => { handleMuchMsg( [t("chatboot.about-her-job"), t("chatboot.about-her-objectives"), t("chatboot.about-her-presentation") ])};
 
   return (
     <div>
@@ -22,7 +37,9 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
         return React.cloneElement(child, {
           actions: {
             handleDog,
-            handleYou
+            handleYou,
+            handleNotUnderstand,
+            handleAboutHer
           },
         });
       })}

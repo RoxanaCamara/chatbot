@@ -1,14 +1,18 @@
 {
     "chatboot":{
-        "init": "ey Hi, nice to meet you",
-        "select-language": "Hello, before comming, select you prefer language",
         "i-am": "My name is and i am a chatboot",
-        "dog": "a random dog"
+        "dog": "a random dog",
+        "about-her-presentation": "She live in Argentina",
+        "about-her-job": "She is a programmer front end",
+        "about-her-objectives": "She want to investing ajajaj",
+        "not-understand": "Sorry, not understand",
+        "goodbye": "Nice to meet you!"
     },
     "user": {
         "hello": "hello",
         "languge": "language",
         "you": "you",
-        "dog": "dog"
+        "dog": "dog",
+        "about-her": "she"
     }
 }
