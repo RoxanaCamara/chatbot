@@ -5,3 +5,7 @@
 4- opciones para consultar: OBJETIVO, CONTACTO, EXPERIENCIA LABORAL, REPOSITORIOS, ESTUDIOS, CONOCIMIENTOS, CV, HOBBIES, 
 5- Preguntas del boot al recruiter
 6- que tal le parecio la experiencia con el boot?
+
+### START
+npm install
+npm start

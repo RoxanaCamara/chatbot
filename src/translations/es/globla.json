@@ -1,18 +1,55 @@
 {
     "chatboot":{
-        "i-am": "Mi nombre es Narboot y soy un chatboot ",
-        "dog": "un perro random",        
-        "about-her-presentation": "Ella vive en Argentina, Berazategui",
-        "about-her-job": "Es programadora front end",
-        "about-her-objectives": "Ella quiere invertir ajajaj",
+        "i-am": "Mi nombre es Lissa y soy un chatboot!",
+        "mi-emotion": "Me alegra mucho poder hablar contigo!",
+        "mi-proposed": "Mi proposito es que puedas conocer un poco más a la desarrolladora detras de esto",
+        
+        "about-her-presentation": "Su nombre es Narela Camara, tiene 25 años. Actualemte se encuetra trabajando en Adecco como developer front end",
+        "about-her-job": "Desde hace 2 años ejerce como desarrolladora full stack. Tiene una preferencia sobre el front end, aunque a veces voy a admitirte que le gusta cambiar los aires",
+        "about-her-from": "Vive en Argentina en la provincia de Buenos aires",
+        "about-her-live": "Con sus padres y hermanos. Y por supuesto no hay que olvidarse de los gatos tambien!",
+
+        "objectives-personal-1": "Se considera una persona que siempre",
+        "objectives-personal-2": "",
+
+        "contact-number": "54 9 +112517****",
+        "contact-email": "narela.camara@gmail.com",
+        "contact-linkedin": "www.linkedin.com/in/narelacamara",
+        
+        "work-experience": "",
+        "work-experience-adecco": "",
+        "work-experience-itr": "",
+
+        "portafolio-repository-1": "",
+        "portafolio-repository-2": "",
+        "portafolio-repository-3": "",
+        
+        "academic-studies": "",
+
+        "knowledge-1": "",
+        "knowledge-2": "",
+        "knowledge-3": "",
+        "knowledge-4": "",
+
+        "cv": "",
+
+        "hobbies": "",
+
+        "questions-1": "",
+        "questions-2": "",
+        "questions-3": "",
+        "questions-4": "",
+
+        "experience": "",
+
         "not-understand": "Perdon, no te entendi ni un socotroco",
+        "dog": "un perro random",        
         "goodbye": "Espero nos volvamos a hablar!"
     },
     "user": {
         "hello": "hola",
-        "languge": "idioma",
         "you": "tu",
         "dog": "perro",
-        "about-her": "ella"
+        "about-her": "ella narela"
     }
 }
