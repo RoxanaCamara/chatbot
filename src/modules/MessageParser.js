@@ -5,18 +5,13 @@ import { useTranslation } from 'react-i18next';
 const MessageParser = ({ children, actions }) => {
   const [ t, i18n] = useTranslation("global")
   
-  const parse = (message) => {
-    if (message.includes(t('user.hello'))) {
-      actions.handleHello();
-    }
+  const parse = (message) => {    
+
     if (message.includes(t('user.dog'))) {
       actions.handleDog();
     }
-    if (message.includes(t('user.languge'))) {
-      actions.handleLanguage();
-    }
     if (message.includes(t('user.you'))) {
-      actions.handleLanguage();
+      actions.handleYou();
     }
   };
 

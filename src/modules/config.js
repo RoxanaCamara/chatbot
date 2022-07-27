@@ -6,7 +6,14 @@ import DogPicture from '../components/Dog/DogPicture';
 const botName = 'Narbot';
 
 const config = {
-  initialMessages: [createChatBotMessage(`Hi! I'm ${botName}`)],
+  initialMessages: [createChatBotMessage(`Welcome to the chat with ${botName}`),
+  createChatBotMessage(`Before start, need to select you language`), 
+  createChatBotMessage(`Antes de empezar, seleccione su idioma`,
+    {
+      widget: 'buttonsLanguage',
+    }
+  )
+],
   botName: botName,
   customStyles: {
     botMessageBox: {

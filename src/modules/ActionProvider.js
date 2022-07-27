@@ -4,62 +4,24 @@ import { useTranslation } from 'react-i18next';
 const ActionProvider = ({ createChatBotMessage, setState, children }) => {
   const [ t, i18n] = useTranslation("global")
 
-
-  const handleHello = () => {
-    const botMessage = createChatBotMessage(t("init-conversation.init"));
-    setState((prev) => ({
-      ...prev,
-      messages: [...prev.messages, botMessage],
-    }));
-  };
-
-  const handleDog = () => {
-    const botMessage = createChatBotMessage(
-      "Here's a nice dog picture for you!",
-      {
-        widget: 'dogPicture',
-      }
-    );
+  const handle = (text = "", widget = {}) => {
+    const botMessage = createChatBotMessage(text, widget);
 
     setState((prev) => ({
       ...prev,
       messages: [...prev.messages, botMessage],
     }));
   };
+  const handleDog = () => { handle( t("chatboot.dog"), {widget: 'dogPicture',})};
 
-  const handleLanguage = () => {
-    const botMessage = createChatBotMessage(
-      t("init-conversation.select-language"),
-      {
-        widget: 'buttonsLanguage',
-      }
-    );
-
-    setState((prev) => ({
-      ...prev,
-      messages: [...prev.messages, botMessage],
-    }));
-  };
-
-  const handleYou = () => {
-    const botMessage = createChatBotMessage(
-      t("init-conversation.i-am")
-    );
-
-    setState((prev) => ({
-      ...prev,
-      messages: [...prev.messages, botMessage],
-    }));
-  };
+  const handleYou = () => { handle( t("chatboot.i-am"))};
 
   return (
     <div>
       {React.Children.map(children, (child) => {
         return React.cloneElement(child, {
           actions: {
-            handleHello,
             handleDog,
-            handleLanguage,
             handleYou
           },
         });
