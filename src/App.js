@@ -8,7 +8,7 @@ import { I18nextProvider } from 'react-i18next';
 import i18next from 'i18next';
 import global_en from './translations/en/globla.json'
 import global_es from './translations/es/globla.json'
-
+import "./style.css"
 
 i18next.init({ 
   interpolation: {escapeValue: false},

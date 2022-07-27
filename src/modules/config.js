@@ -23,13 +23,13 @@ const config = {
       backgroundColor: '#5ccc9d',
     },
   },
-  /*customComponents: {
-   header: () => <div style={{ backgroundColor: 'red', padding: "5px", borderRadius: "3px" }}>This is the header</div>,
-   botAvatar: (props) => <MyAvatar {...props} />,
+  customComponents: {
+   header: () => <div className='header-chatboot'>Lissa</div>,
+  /* botAvatar: (props) => <MyAvatar {...props} />,
    botChatMessage: (props) => <MyCustomChatMessage {...props} />,
    userAvatar: (props) => <MyCustomAvatar {...props} />,
-   userChatMessage: (props) => <MyCustomUserChatMessage {...props} />
- },*/
+   userChatMessage: (props) => <MyCustomUserChatMessage {...props} />*/
+ },
   widgets: [
     {
       widgetName: 'dogPicture',
