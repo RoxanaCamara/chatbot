@@ -2,7 +2,10 @@
 import { createChatBotMessage } from 'react-chatbot-kit';
 import { Buttons } from '../components/Buttons/Buttons';
 import DogPicture from '../components/Dog/DogPicture';
-
+import {
+  Avatar, Box
+} from "@chakra-ui/react";
+import { Header } from '../components/Header/Header';
 const botName = 'Narbot';
 
 const config = {
@@ -23,13 +26,25 @@ const config = {
       backgroundColor: '#5ccc9d',
     },
   },
-  customComponents: {
-   header: () => <div className='header-chatboot'>Lissa</div>,
-  /* botAvatar: (props) => <MyAvatar {...props} />,
-   botChatMessage: (props) => <MyCustomChatMessage {...props} />,
-   userAvatar: (props) => <MyCustomAvatar {...props} />,
-   userChatMessage: (props) => <MyCustomUserChatMessage {...props} />*/
+  customComponents: {  
+   botAvatar: (props) =>  <Header/> ,
+   userAvatar: (props) =>  <Box {...props} />,
+  /*
+  header: () =>,
+   botChatMessage: (props) => <MyCustomChatMessage {...props} />,   
+   userChatMessage: (props) => <MyCustomUserChatMessage {...props} />
+   */
  },
+ customStyles: {
+  // Overrides the chatbot message styles
+  botMessageBox: {
+    backgroundColor: "#376B7E",
+  },
+  // Overrides the chat button styles
+  chatButton: {
+    backgroundColor: "#5ccc9d",
+  },
+  },
   widgets: [
     {
       widgetName: 'dogPicture',

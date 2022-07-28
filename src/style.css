@@ -1,5 +1,20 @@
+.show_chat{
+    display: block;
+
+}  
+
+.hidden_chat{
+    display: none;
+
+}
+
+.icon_chat{
+    
+}
+
+
 .react-chatbot-kit-chat-container {
-    margin: 20px;
+    margin: 20px;   
 }
 
 .header-chatboot{
